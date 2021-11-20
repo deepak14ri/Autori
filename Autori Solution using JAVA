@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String ans ="";
+        String[] items = s.split("-");
+
+        for(int i=0;i<items.length;i++){
+            ans+=items[i].charAt(0);
+        }
+        System.out.println(ans);
+    }
+}
